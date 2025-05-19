@@ -1,0 +1,13 @@
+CREATE DATABASE Tiempo;
+
+USE Tiempo;
+
+CREATE TABLE CoordenadasXY (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Coordenadas VARCHAR(50) NOT NULL UNIQUE,
+    Contador INT NOT NULL DEFAULT 1
+);
+
+DROP DATABASE Tiempo;
+
+USE master;
